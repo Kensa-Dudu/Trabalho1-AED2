@@ -29,11 +29,13 @@ Node* newNode(int key){
 }
 //eduardo
 Node *rightRotate(Node *y){
-   Node *rightRotate(Node *y){
  Node *x, *z;
-    x = y->left; 
-    z = y->right; 
-    x->right = y; 
+    x = y->left;
+
+    z = y->right;
+
+    x->right = y;
+
     y->left = z; 
 
     x->height = max(height(x->left), height(x->right)) + 1;
