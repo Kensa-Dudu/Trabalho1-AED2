@@ -28,7 +28,7 @@ Node* newNode(int key){
 	return(node);
 }
 //eduardo
-Node *rightRotate(Node *y){
+Node *rightRotate(Node *y){ //funcao que rotaciona a direita
  Node *x, *z;
     x = y->left;
 
